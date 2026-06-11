@@ -1,0 +1,16 @@
+print("Ingrese su datos personales")
+nombre = input ("Nombre:")
+apellido = input ("Apellido:")
+edad = int(input("Edad:"))
+estatura = float (input("Estatura:"))
+
+print("DATOS DEL USUARIO")
+print("Usuario:", nombre, apellido)
+print("De:", edad,"años")
+print("Mide:", estatura,"metros")
+
+print("TIPOS DE DATOS")
+print(type(nombre))
+print(type(apellido))
+print(type(edad))
+print(type(estatura))

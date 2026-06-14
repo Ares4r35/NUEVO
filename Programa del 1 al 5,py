@@ -1,0 +1,41 @@
+
+print("Programa de prueba y repaso")
+print("Refuerzo de conceptos básicos")
+## Este programa es un repaso de los conceptos básicos de Python.
+## Se pueden agregar más ejercicios y conceptos a medida que se avanza en el aprendizaje.
+nombre = input("Ingrese su nombre: ")
+print ("Hola, " +nombre+"! Bienvenido, favor ingrese el monto de compra.")
+print ("Cliente: " +nombre)
+# El programa solicita al usuario que ingrese el monto de compra y aplica un descuento según el monto ingresado.
+monto_compra = float(input("Monto de compra: "))
+#Validamos la entrada del monto como dato limpio, es decir, que sea un número positivo y no esté vacío.
+#monto_compra = float(input("Monto de compra: "))
+
+# Si el monto de compra es negativo, se muestra un mensaje de error.
+if monto_compra < 0:
+   print("❌ Monto de compra no válido, ingrese un monto válido.")
+
+
+# Si el monto de compra es mayor o igual a 500000, se aplica un descuento del 15%.
+elif monto_compra >= 500000:
+    descuento = monto_compra * 0.15
+    total = monto_compra - descuento
+    print("Descuento de: 15% ")
+    print("Total a pagar: " + str(total))
+
+
+# Si el monto de compra es mayor o igual a 200000 y menor a 500000, se aplica un descuento del 5%.
+elif monto_compra >= 200000:
+    descuento = monto_compra * 0.1
+    total = monto_compra - descuento
+    print("Descuento de: 10% ")
+    print("Total a pagar: " + str(total))
+
+
+# Si el monto de compra es menor a 200000, se aplica un descuento del 5%.
+else:
+    descuento = monto_compra * 0.05
+    total = monto_compra - descuento
+    print("Descuento de: 5% ")
+    print("Total a pagar: " + str(total))
+         
